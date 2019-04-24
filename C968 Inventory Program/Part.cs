@@ -16,12 +16,12 @@ namespace C968_Inventory_Program
         //public int max { get; set; }
         //public int min { get; set; }
 
-        int partID;
-        string name;
-        double price;
-        int inStock;
-        int max;
-        int min;
+        private int partID;
+        private string name;
+        private double price;
+        private int inStock;
+        private int max;
+        private int min;
 
         public void setName(string Name)
         {

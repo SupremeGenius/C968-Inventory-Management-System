@@ -9,7 +9,7 @@ namespace C968_Inventory_Program
     class Outsourced : Part
     {
 
-        string companyName;
+        private string companyName;
 
         public void setCompanyName(string CompanyName)
         {

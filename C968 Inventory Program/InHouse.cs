@@ -9,7 +9,7 @@ namespace C968_Inventory_Program
     class InHouse : Part
     {
 
-        int machineID;
+        private int machineID;
 
         public void setMachineID(int MachineID)
         {
