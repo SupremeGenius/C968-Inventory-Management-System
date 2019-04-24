@@ -38,22 +38,22 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.PartsList = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ProductsList = new System.Windows.Forms.ListView();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ProductsList = new System.Windows.Forms.ListView();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -150,70 +150,6 @@
             this.button9.Text = "Exit";
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // PartsList
-            // 
-            this.PartsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.PartsList.FullRowSelect = true;
-            this.PartsList.GridLines = true;
-            this.PartsList.Location = new System.Drawing.Point(41, 98);
-            this.PartsList.Name = "PartsList";
-            this.PartsList.Size = new System.Drawing.Size(351, 154);
-            this.PartsList.TabIndex = 10;
-            this.PartsList.UseCompatibleStateImageBehavior = false;
-            this.PartsList.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Part ID";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Part Name";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Inventory Level";
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Price/Cost per Unit";
-            // 
-            // ProductsList
-            // 
-            this.ProductsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8});
-            this.ProductsList.FullRowSelect = true;
-            this.ProductsList.GridLines = true;
-            this.ProductsList.Location = new System.Drawing.Point(43, 90);
-            this.ProductsList.Name = "ProductsList";
-            this.ProductsList.Size = new System.Drawing.Size(351, 154);
-            this.ProductsList.TabIndex = 11;
-            this.ProductsList.UseCompatibleStateImageBehavior = false;
-            this.ProductsList.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Product ID";
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Product Name";
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Inventory Level";
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Price per Unit";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -250,9 +186,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.listView1);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.PartsList);
             this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button3);
@@ -277,6 +213,74 @@
             this.groupBox2.Size = new System.Drawing.Size(442, 341);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Product ID";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Product Name";
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Inventory Level";
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Price per Unit";
+            // 
+            // ProductsList
+            // 
+            this.ProductsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8});
+            this.ProductsList.FullRowSelect = true;
+            this.ProductsList.GridLines = true;
+            this.ProductsList.Location = new System.Drawing.Point(43, 86);
+            this.ProductsList.Name = "ProductsList";
+            this.ProductsList.Size = new System.Drawing.Size(351, 154);
+            this.ProductsList.TabIndex = 11;
+            this.ProductsList.UseCompatibleStateImageBehavior = false;
+            this.ProductsList.View = System.Windows.Forms.View.Details;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.Location = new System.Drawing.Point(45, 94);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(351, 154);
+            this.listView1.TabIndex = 15;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Product ID";
+            this.columnHeader1.Width = 76;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Product Name";
+            this.columnHeader2.Width = 110;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Inventory Level";
+            this.columnHeader3.Width = 66;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Price per Unit";
+            this.columnHeader4.Width = 106;
             // 
             // Form1
             // 
@@ -312,22 +316,22 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.ListView PartsList;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ListView ProductsList;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ListView ProductsList;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }
 

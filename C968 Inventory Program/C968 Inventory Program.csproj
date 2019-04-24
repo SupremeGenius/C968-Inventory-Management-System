@@ -52,6 +52,12 @@
     <Compile Include="Add Part.Designer.cs">
       <DependentUpon>Add Part.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Product.Designer.cs">
+      <DependentUpon>Add Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,16 +70,28 @@
     <Compile Include="Modify Part.Designer.cs">
       <DependentUpon>Modify Part.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modify Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify Product.Designer.cs">
+      <DependentUpon>Modify Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Add Part.resx">
       <DependentUpon>Add Part.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Product.resx">
+      <DependentUpon>Add Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main Form.resx">
       <DependentUpon>Main Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modify Part.resx">
       <DependentUpon>Modify Part.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify Product.resx">
+      <DependentUpon>Modify Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
