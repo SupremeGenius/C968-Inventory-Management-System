@@ -58,6 +58,7 @@
     <Compile Include="Add Product.Designer.cs">
       <DependentUpon>Add Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="InHouse.cs" />
     <Compile Include="Main Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +77,8 @@
     <Compile Include="Modify Product.Designer.cs">
       <DependentUpon>Modify Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="Outsourced.cs" />
+    <Compile Include="Part.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Add Part.resx">
