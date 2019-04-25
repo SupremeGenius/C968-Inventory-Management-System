@@ -36,7 +36,6 @@ namespace C968_Inventory_Program
 
 
 
-
         }
     }
 }

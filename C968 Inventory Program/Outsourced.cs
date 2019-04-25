@@ -11,14 +11,16 @@ namespace C968_Inventory_Program
 
         private string companyName;
 
-        public void setCompanyName(string CompanyName)
+        public string CompanyName
         {
-            companyName = CompanyName;
-        }
-        
-        public string getCompanyName()
-        {
-            return companyName;
+            get
+            {
+                return companyName;
+            }
+            set
+            {
+                companyName = CompanyName;
+            }
         }
 
     }

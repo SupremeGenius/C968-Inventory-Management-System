@@ -9,12 +9,7 @@ namespace C968_Inventory_Program
     abstract class Part
     {
 
-        //public int partID { get; set; }
-        //public string name { get; set; }
-        //public double price { get; set; }
-        //public int inStock { get; set; }
-        //public int max { get; set; }
-        //public int min { get; set; }
+        
 
         private int partID;
         private string name;
@@ -23,67 +18,78 @@ namespace C968_Inventory_Program
         private int max;
         private int min;
 
-        public void setName(string Name)
-        {
-            name = Name;
-        }
 
-        public string getName()
+        public int PartID
         {
-            return name;
-        }
-
-        public void setPrice(double Price)
-        {
-            price = Price;
-        }
-
-        public double getPrice()
-        {
-            return price;
-        }
-
-        public void setInStock(int InStock)
-        {
-            inStock = InStock;
-        }
-
-        public int getInStock()
-        {
-            return inStock;
-        }
-
-        public void setMin(int Min)
-        {
-            min = Min;
-        }
-
-        public int getMin()
-        {
-            return min;
-        }
-
-        public void setMax(int Max)
-        {
-            max = Max;
-        }
-
-        public int getMax()
-        {
-            return max;
-        }
-
-        public void setPartID(int PartID)
-        {
-            partID = PartID;
-        }
-
-        public int getPartID()
-        {
-            return partID;
+            get
+            {
+                return partID; }
+            set
+            {
+                partID = PartID;
+            }
         }
 
 
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = Name;
+            }
+        }
+
+        public double Price
+        {
+            get
+            {
+                return price;
+            }
+            set
+            {
+                price = Price;
+            }
+        }
+
+        public int InStock
+        {
+            get
+            {
+                return inStock;
+            }
+            set
+            {
+                inStock = InStock;
+            }
+        }
+
+        public int Max
+        {
+            get
+            {
+                return max;
+            }
+            set
+            {
+                max = Max;
+            }
+        }
+
+        public int Min
+        {
+            get
+            {
+                return min;
+            }
+            set
+            {
+                max = Max;
+            }
+        }
 
     }
 }

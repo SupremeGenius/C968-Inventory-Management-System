@@ -11,14 +11,16 @@ namespace C968_Inventory_Program
 
         private int machineID;
 
-        public void setMachineID(int MachineID)
+        public int MachineID
         {
-            machineID = MachineID;
-        }
-
-        public int getMachineID()
-        {
-            return machineID;
+            get
+            {
+                return machineID;
+            }
+            set
+            {
+                machineID = MachineID;
+            }
         }
 
 
